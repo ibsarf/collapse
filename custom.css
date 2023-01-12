@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    margin: 10px 20px;
+}
+h1{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.section{
+    border: 1px solid #ddd;
+    border-radius:10px ;
+    margin-top: 10px;
+    padding: 20px 50px;
+    font-size: 14px;
+    overflow:hidden;
+    position:relative;
+    transition: .5s ease;
+}
+.section h3{
+    cursor: pointer;
+}
+.section .text{
+    padding: 10px 20px;
+    font-size: inherit;
+    display: none;
+    transition: 0.5s ease;
+}
+.section.active .text{
+    display: block;
+}
+.section .toggle{
+    position: absolute;
+    left: 10px;
+    top:15px;
+    opacity: .5;
+    transition: .5s ease;
+}
+.section .plus{
+    font-size: 30px; 
+    cursor: pointer;
+    transition: .5s ease;
+}
+.section.active .plus{
+    display: none;
+}
+.section .negative{
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+.section.active .negative{
+display: block;
+}
